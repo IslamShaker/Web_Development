@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEB DEVELOPMENT</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- main css file -->
+    <link rel="stylesheet" href="CSS/style.css">
+
+    <!-- main icons file -->
+    <link rel="stylesheet" href="CSS/all.css">
+
+</head>
+
+<body>
+
+    <!-- ===== header-section ===== -->
+    <nav class="header navbar navbar-expand-lg navbar-dark bg-dark" id="header">
+
+        <div class="container-fluid">
+            <a class="navbar-brand" href="javascript:void(0)">
+                <img src="Images/Logo.png" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mynavbar">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#main">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#welcome">Welcome</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#offer">Overview</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#offer" role="button"
+                            data-bs-toggle="dropdown">Compilers</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#services01">HTML</a></li>
+                            <li><a class="dropdown-item" href="#services02">CSS</a></li>
+                            <li><a class="dropdown-item" href="#services03">JavaScript</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#destinations">Cycle</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#thanks">Front</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#news">Back</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="text" placeholder="Search">
+                    <button class="btn btn-outline-info me-3" type="button">Search</button>
+                    <button type="button" class="btn btn-outline-info me-3" data-bs-toggle="modal"
+                        data-bs-target="#myModal">
+                        Login
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <!-- The Modal -->
+        <div class="modal fade" id="myModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h4 class="modal-title">Login</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-floating mb-3 mt-3">
+                                <input type="text" class="form-control" id="email" placeholder="Enter email"
+                                    name="email">
+                                <label class="text-primary" for="email">Email</label>
+                            </div>
+
+                            <div class="form-floating mt-3 mb-3">
+                                <input type="password" class="form-control" id="pwd" placeholder="Enter password"
+                                    name="pswd">
+                                <label class="text-primary" for="pwd">Password</label>
+                            </div>
+                            <div class="form-check form-switch mb-3">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" type="checkbox" name="remember"> Remember me
+                                </label>
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-- Modal footer -->
+                    <div class="modal-footer d-flex justify-content-between">
+                        <button type="button" class="btn btn-outline-dark"">Login</button>
+                        <button type=" button" class="btn btn-outline-danger" data-bs-dismiss="modal">Close</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </nav>
+
+    <!-- ===== home-section ===== -->
+    <main id="demo" class="carousel slide" data-bs-ride="carousel" id="main">
+
+        <!-- Indicators/dots -->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+        </div>
+
+        <!-- The slideshow/carousel -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="Images/background01.jpg" alt="Los Angeles" class="d-block">
+            </div>
+            <div class="carousel-item">
+                <img src="Images/background02.jpg" alt="Chicago" class="d-block">
+            </div>
+            <div class="carousel-item">
+                <img src="Images/Background07.jpg" alt="New York" class="d-block">
+            </div>
+        </div>
+
+        <!-- Left and right controls/icons -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+
+        <!-- <section class="overlay d-inline-flex flex-column justify-content-around">
+            <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-brands fa-square-github"></i></a>
+            <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+        </section> -->
+    </main>
+
+    <!-- ===== welcome-section ===== -->
+    <section class="welcome container-fluid bg-light rounded p-4" id="welcome">
+        <h2>What is Web Development?</h2>
+        <p>
+            Web development is the process of building websites and web applications that work on the internet. From
+            creating a simple static one-page website to coding a full-blown robust web application and a content
+            management system.
+        </p>
+        <button class="btn btn-outline-info mt-3" type="button" data-bs-toggle="collapse" data-bs-target="#demo01">Lead
+            More</button>
+        <div id="demo01" class="collapse">
+            Software development life cycle or SDLC for website development includes-
+            <ul class="welcome-list">
+                <li class="my-3">the coding of the application logic</li>
+                <li class="my-3">incorporating databases and managing user queries</li>
+                <li class="my-3">designing user interfaces</li>
+                <li class="my-3">hosting the website on servers</li>
+                <li class="my-3">maintaining and updating</li>
+            </ul>
+            Each activity involved in the custom web app development process can be classified into server-side,
+            client-side, and full-stack development.
+        </div>
+    </section>
+
+    <!-- ===== offer-article ===== -->
+    <article class="offer container-fluid p-4" id="offer">
+        <header class="my-3">
+            <h2 class="header">Web Development Fields</h2>
+        </header>
+
+        <section>
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Frontend Developer
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>
+                                A Front-End Developer Builds The Front-End Portion Of Websites And Web Applications—The
+                                Part Users See And Interact With.
+                            </p>
+                            <a class="btn btn-outline-secondary" href="https://roadmap.sh/frontend" target="_blank">Read
+                                More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Backend Developer
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>
+                                A Back-End Developer Builds And Maintain The Back-End Mechanisms That Process Data And
+                                Perform Actions On Websites.
+                            </p>
+                            <a class="btn btn-outline-secondary" href="https://roadmap.sh/backend" target="_blank">Read
+                                More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Fullstack Developer
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>
+                                A Full-Stack Developer Helps Build And Maintain Both The Front-End And The Back-End Of A
+                                Websites And Applications.
+                            </p>
+                            <a class="btn btn-outline-secondary" href="https://roadmap.sh/full-stack"
+                                target="_blank">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </article>
+
+    <!-- ===== services-article01 -->
+    <article class="services container-fluid p-4" id="services01">
+        <header class="my-4">
+            <h2 class="header">HTML Compiler</h2>
+        </header>
+
+        <section>
+            <p class="d-inline-block">Write HTML Code to Compile It</p>
+
+            <!-- Button to Open the Modal -->
+            <button type="button" class="d-block btn btn-outline-info my-2" data-bs-toggle="modal"
+                data-bs-target="#modal02" title="copied"> Copy </button>
+
+            <!-- The Modal -->
+            <div class="modal" id="modal02">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                            <h4 class="modal-title">Translation</h4>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+
+                        <!-- Modal body -->
+                        <div class="modal-body">
+                            compiled code is been copied!
+                        </div>
+
+                        <!-- Modal footer -->
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Close</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-floating my-3">
+                <textarea class="form-control" rows="5" name="text" id="text" placeholder="Coding ..."></textarea>
+                <label class="text-secondary" for="text">Coding...</label>
+            </div>
+
+        </section>
+    </article>
+
+    <!-- ===== services-article02 -->
+    <article class="services container-fluid p-4" id="services02">
+        <header class="my-4">
+            <h2 class="header">CSS Compiler</h2>
+        </header>
+
+        <section>
+            <p class="d-inline-block">Write CSS Code to Compile It</p>
+
+            <!-- Button to Open the Modal -->
+            <button type="button" class="d-block btn btn-outline-info my-2" data-bs-toggle="modal"
+                data-bs-target="#modal02" title="copied"> Copy </button>
+
+            <!-- The Modal -->
+            <div class="modal" id="modal02">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                            <h4 class="modal-title">Translation</h4>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+
+                        <!-- Modal body -->
+                        <div class="modal-body">
+                            compiled code is been copied!
+                        </div>
+
+                        <!-- Modal footer -->
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Close</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-floating my-3">
+                <textarea class="form-control" rows="5" name="text" id="text" placeholder="Codeing..."></textarea>
+                <label class="text-secondary" for="text">Codeing...</label>
+            </div>
+
+        </section>
+    </article>
+
+    <!-- ===== services-article03 -->
+    <article class="services container-fluid p-4" id="services03">
+        <header class="my-4">
+            <h2 class="header">JavaScript Compiler</h2>
+        </header>
+
+        <section>
+            <p class="d-inline-block">Write JS Code to Compile It</p>
+
+            <!-- Button to Open the Modal -->
+            <button type="button" class="d-block btn btn-outline-info my-2" data-bs-toggle="modal"
+                data-bs-target="#modal02" title="copied"> Copy </button>
+
+            <!-- The Modal -->
+            <div class="modal" id="modal02">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                            <h4 class="modal-title">Translation</h4>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+
+                        <!-- Modal body -->
+                        <div class="modal-body">
+                            compiled code is been copied!
+                        </div>
+
+                        <!-- Modal footer -->
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Close</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-floating my-3">
+                <textarea class="form-control" rows="5" name="text" id="text" placeholder="Codeing..."></textarea>
+                <label class="text-secondary" for="text">Codeing...</label>
+            </div>
+
+        </section>
+    </article>
+
+    <!-- ===== Destinations-article ===== -->
+    <article class="destinations container p-4 my-3 rounded-3" id="destinations">
+
+        <header class="my-3">
+            <h2 class="header">WEB DEVELOPMENT LIFE CYCLE</h2>
+        </header>
+
+        <section class="row justify-content-center gap-4" id="products">
+
+            <div class="card col-lg-3 col-md-4 p-2 my-2 border-0 rounded-3">
+                <img class="card-img-top rounded" src="Images/Research-and-Analysis.jpg" alt="Card image">
+                <div class="card-body">
+                    <h4 class="card-title">Research and Analysis</h4>
+                    <p class="card-text">Gathering Information About The Project And The Client Is Crucial</p>
+                    <a href="#" class="btn btn-outline-info">Read More</a>
+                </div>
+            </div> <!-- card-item01 -->
+
+            <div class="card col-lg-3 col-md-4 p-2 my-2 border-0 rounded-3">
+                <img class="card-img-top rounded" src="Images/planning-and-strategy-1024x512.jpg" alt="Card image">
+                <div class="card-body">
+                    <h4 class="card-title">Planning and Strategy</h4>
+                    <p class="card-text">Creating A Plan For The Website, Including The Website's Goals, Features, And
+                        Budget.</p>
+                    <a href="#" class="btn btn-outline-info">Read More</a>
+                </div>
+            </div> <!-- card-item02 -->
+
+            <div class="card col-lg-3 col-md-4 p-2 my-2 border-0 rounded-3">
+                <img class="card-img-top rounded" src="Images/designing.jpg" alt="Card image">
+                <div class="card-body">
+                    <h4 class="card-title">Designing and Wireframing</h4>
+                    <p class="card-text">Creating The Visual Appearance Of The Website, Including The Layout, Colors,
+                        And Fonts.</p>
+                    <a href="#" class="btn btn-outline-info">Read More</a>
+                </div>
+            </div> <!-- card-item03 -->
+
+            <div class="card col-lg-3 col-md-4 p-2 my-2 border-0 rounded-3">
+                <img class="card-img-top rounded" src="Images/Development.jpg" alt="Card image">
+                <div class="card-body">
+                    <h4 class="card-title">Code and Development</h4>
+                    <p class="card-text">Coding The Website And Making Sure That It Works Properly</p>
+                    <a href="#" class="btn btn-outline-info">Read More</a>
+                </div>
+            </div> <!-- card-item04 -->
+
+            <div class="card col-lg-3 col-md-4 p-2 my-2 border-0 rounded-3">
+                <img class="card-img-top rounded" src="Images/Testing.jpg" alt="Card image">
+                <div class="card-body">
+                    <h4 class="card-title">Testing and Quality Assurance</h4>
+                    <p class="card-text">Testing The Website To Make Sure That It Is Free Of Errors And Meets All
+                        Requirements.</p>
+                    <a href="#" class="btn btn-outline-info">Read More</a>
+                </div>
+            </div> <!-- card-item05 -->
+
+            <div class="card col-lg-3 col-md-4 p-2 my-2 border-0 rounded-3">
+                <img class="card-img-top rounded" src="Images/Deployment.jpg" alt="Card image">
+                <div class="card-body">
+                    <h4 class="card-title">Deployment and Maintenance</h4>
+                    <p class="card-text">Regular maintenance and updates are absolutely crucial to keep the site
+                        functioning perfectly and engage new users.</p>
+                    <a href="#" class="btn btn-outline-info">Read More</a>
+                </div>
+            </div> <!-- card-item06 -->
+
+        </section>
+
+    </article>
+
+    <!-- ===== Thanks-article ===== -->
+    <article class="thanks container p-4 my-3 rounded-3" id="thanks">
+        <header class="my-3">
+            <h2 class="header">Frontend Frameworks</h2>
+        </header>
+
+        <section class="row justify-content-center gap-4" id="products">
+
+            <div class="card col-lg-3 col-md-4 my-2 border-0 rounded-4">
+                <img class="card-img-top rounded-4" src="Images/framework.png" alt="Card image">
+
+                <div class="img-overlay border-0 rounded-4">
+                    <div class="overlay-content">
+                        <h4 class="card-title">React</h4>
+                        <p class="card-text">Frontend</p>
+                        <img class="rounded-circle my-2 p-2" src="Images/R.png" alt="">
+                        <p class="card-text">Framework</p>
+                        <a href="https://react.dev/" class="com-link" target="_blank">Read More</a>
+                    </div>
+                </div>
+            </div> <!-- card-item01 -->
+
+            <div class="card col-lg-3 col-md-4 my-2 border-0 rounded-4">
+                <img class="card-img-top rounded-4" src="Images/framework.png" alt="Card image">
+
+                <div class="img-overlay border-0 rounded-4">
+                    <div class="overlay-content">
+                        <h4 class="card-title">Angular</h4>
+                        <p class="card-text">Frontend</p>
+                        <img class="rounded-circle my-2 p-2" src="Images/A.png" alt="">
+                        <p class="card-text">Framework</p>
+                        <a href="https://angular.io/" class="com-link" target="_blank">Read More</a>
+                    </div>
+                </div>
+            </div> <!-- card-item02 -->
+
+            <div class="card col-lg-3 col-md-4 my-2 border-0 rounded-4">
+                <img class="card-img-top rounded-4" src="Images/framework.png" alt="Card image">
+
+                <div class="img-overlay border-0 rounded-4">
+                    <div class="overlay-content">
+                        <h4 class="card-title">Vue</h4>
+                        <p class="card-text">Frontend</p>
+                        <img class="rounded-circle my-2 p-2" src="Images/V.png" alt="">
+                        <p class="card-text">Framework</p>
+                        <a href="https://vuejs.org/" class="com-link" target="_blank">Read More</a>
+                    </div>
+                </div>
+            </div> <!-- card-item03 -->
+
+        </section>
+
+    </article>
+
+    <!-- ===== news-article ===== -->
+    <article class="news container my-5" id="news">
+
+        <div class="new-item bg-light rounded-4 d-flex">
+            <div class="news-item-content p-5">
+                <div class="news-item-info">
+                    <h2>Express (Node.js)</h2>
+                    <p>
+                        <i class="far fa-calendar-alt"></i>
+                        Wed, Oct, 18th 2023
+                    </p>
+                    <p class="my-4">
+                        Express is a fast, unopinionated, flexible and minimalist web framework for Node.js (node is a
+                        browserless environment for running JavaScript). It provides a robust set of features for web
+                        and mobile applications and delivers useful HTTP utility methods and middleware.
+                    </p>
+                </div>
+
+                <div class="news-item-options mt-4">
+                    <button class="btn btn-secondary rounded-pill py-1 px-3">
+                        <a class="nav-link" href="http://expressjs.com/en/5x/api.html#express" target="_blank">
+                            <i class="fas fa-podcast me-2"></i>
+                            <span>Learn More</span>
+                        </a>
+                    </button>
+                    <button class="btn btn-secondary rounded-pill py-1 px-3">
+                        <a class="nav-link" href="https://nodejs.org/en" target="_blank">
+                            <i class="far fa-clock me-2"></i>
+                            <span>Node.js</span>
+                        </a>
+                    </button>
+                    <button class="btn btn-secondary rounded-pill py-1 px-3">
+                        <a class="nav-link" href="https://youtu.be/Oe421EPjeBE?si=ID-yushs-8o0_cod" target="_blank">
+                            <i class="fas fa-play me-2"></i>
+                            <span>Course</span>
+                        </a>
+                    </button>
+
+                </div>
+            </div>
+
+            <figure class="news-item-image p-0">
+                <img src="Images/Nodejs_logo.jpg" alt="...">
+            </figure>
+        </div>
+
+        <div class="new-item bg-light rounded-4 d-flex">
+            <figure class="news-item-image p-0">
+                <img src="Images/PHP_logo.png" alt="...">
+            </figure>
+
+            <div class="news-item-content p-5">
+                <div class="news-item-info">
+                    <h2>Laravel (PHP)</h2>
+                    <p>
+                        <i class="far fa-calendar-alt"></i>
+                        Wed, Oct, 18th 2023
+                    </p>
+                    <p class="my-4">
+                        Laravel is a web application framework with expressive, elegant syntax. Laravel attempts to take
+                        the pain out of development by easing common tasks used in the majority of web projects. Laravel
+                        is accessible, yet powerful, providing tools needed for large, robust applications.
+                    </p>
+                </div>
+
+                <div class="news-item-options mt-4">
+                    <button class="btn btn-secondary rounded-pill py-1 px-3">
+                        <a class="nav-link" href="https://laravel.com/" target="_blank">
+                            <i class="fas fa-podcast me-2"></i>
+                            <span>Learn More</span>
+                        </a>
+                    </button>
+                    <button class="btn btn-secondary rounded-pill py-1 px-3">
+                        <a class="nav-link" href="https://www.php.net/" target="_blank">
+                            <i class="far fa-clock me-2"></i>
+                            <span>PHP</span>
+                        </a>
+                    </button>
+                    <button class="btn btn-secondary rounded-pill py-1 px-3">
+                        <a class="nav-link" href="https://youtu.be/ImtZ5yENzgE?si=YVEfXJuWAvoR_aO7" target="_blank">
+                            <i class="fas fa-play me-2"></i>
+                            <span>Course</span>
+                        </a>
+                    </button>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="new-item bg-light rounded-4 d-flex">
+            <div class="news-item-content p-5">
+                <div class="news-item-info">
+                    <h2>ASP.NET</h2>
+                    <p>
+                        <i class="far fa-calendar-alt"></i>
+                        Wed, Oct,18th 2023
+                    </p>
+                    <p class="my-4">
+                        ASP.NET is an open source web framework developed by Microsoft for building modern web
+                        applications and services. With ASP.NET you can quickly create websites based on HTML, CSS, and
+                        JavaScript, scale them for use by millions of users and easily add more complex capabilities
+                        like Web APIs, forms over data, or real time communications.
+                    </p>
+                </div>
+
+                <div class="news-item-options mt-4">
+                    <button class="btn btn-secondary rounded-pill py-1 px-3">
+                        <a class="nav-link" href="https://dotnet.microsoft.com/en-us/apps/aspnet" target="_blank">
+                            <i class="fas fa-podcast me-2"></i>
+                            <span>Learn More</span>
+                        </a>
+                    </button>
+                    <button class="btn btn-secondary rounded-pill py-1 px-3">
+                        <a class="nav-link" href="https://dotnet.microsoft.com/en-us/" target="_blank">
+                            <i class="far fa-clock me-2"></i>
+                            <span>.Net</span>
+                        </a>
+                    </button>
+                    <button class="btn btn-secondary rounded-pill py-1 px-3">
+                        <a class="nav-link" href="https://youtu.be/hZ1DASYd9rk?si=hMvGLN1zU0bpyDTr" target="_blank">
+                            <i class="fas fa-play me-2"></i>
+                            <span>Course</span>
+                        </a>
+                    </button>
+
+                </div>
+            </div>
+
+            <figure class="news-item-image p-0">
+                <img src="Images/dotNet.png" alt="...">
+            </figure>
+        </div>
+
+        <div class="new-item bg-light rounded-4 d-flex">
+            <figure class="news-item-image p-0">
+                <img src="Images/Python.jpg" alt="...">
+            </figure>
+
+            <div class="news-item-content p-5">
+                <div class="news-item-info">
+                    <h2>Django (Python)</h2>
+                    <p>
+                        <i class="far fa-calendar-alt"></i>
+                        Web, Oct, 18th 2023
+                    </p>
+                    <p class="my-4">
+                        Django is a high-level Python Web framework that encourages rapid development and clean,
+                        pragmatic design. Built by experienced developers, it takes care of much of the hassle of web
+                        development, so you can focus on writing your app without needing to reinvent the wheel. It's
+                        free and open source.
+                    </p>
+                </div>
+
+                <div class="news-item-options mt-4">
+                    <button class="btn btn-secondary rounded-pill py-1 px-3">
+                        <a class="nav-link" href="https://www.djangoproject.com/" target="_blank">
+                            <i class="fas fa-podcast me-2"></i>
+                            <span>Learn More</span>
+                        </a>
+                    </button>
+                    <button class="btn btn-secondary rounded-pill py-1 px-3">
+                        <a class="nav-link" href="https://www.python.org/" target="_blank">
+                            <i class="far fa-clock me-2"></i>
+                            <span>Python</span>
+                        </a>
+                    </button>
+                    <button class="btn btn-secondary rounded-pill py-1 px-3">
+                        <a class="nav-link" href="https://youtu.be/F5mRW0jo-U4?si=9ajXDTKNMQlUCn65" target="_blank">
+                            <i class="fas fa-play me-2"></i>
+                            <span>Course</span>
+                        </a>
+                    </button>
+
+                </div>
+            </div>
+
+
+        </div>
+
+    </article>
+
+    <!-- ===== footer-section ===== -->
+    <footer class="footer container-fluid text-bg-dark mt-5 p-3">
+        <section class="footer-contact p-4 mb-3">
+            <h3 class="p-2">Contact Us</h3>
+            <div class="my-1">
+                <a href="https://www.facebook.com/islam.shaker.5661#" class="me-2" target="_blank">
+                    <i class="fab fa-facebook-square"></i>
+                    <span>Isläm Shäker</span>
+                </a>
+            </div>
+            <div class="my-1">
+                <a href="https://www.linkedin.com/in/eslam-shaker-278582278/#" class="me-2" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                    <span>Eslam Shaker</span>
+                </a>
+            </div>
+            <div class="my-1">
+                <a href="https://github.com/IslamShaker" class="me-2" target="_blank">
+                    <i class="fab fa-github-square"></i>
+                    <span>Islam Shaker</span>
+                </a>
+            </div>
+            <div class="my-1">
+                <a href="#" class="me-2">
+                    <i class="fas fa-phone-square"></i>
+                    <span>01095767137</span>
+                </a>
+
+            </div>
+            <div class="my-1">
+                <a href="mailto:islamshaker.2002@gmail.com" class="me-2" target="_blank">
+                    <i class="fas fa-envelope-square"></i>
+                    <span>islamshaker.2002@gmail.com</span>
+                </a>
+            </div>
+        </section>
+
+        <section class="footer-Links p-4 mb-3">
+            <h3 class="p-2">Important Links</h3>
+            <div class="my-1">
+                <a href="https://developer.mozilla.org/en-US/" class="me-2" target="_blank">
+                    <i class="fa-solid fa-link"></i>
+                    <span>MDN</span>
+                </a>
+            </div>
+            <div class="my-1">
+                <a href="https://www.w3schools.com/" class="me-2" target="_blank">
+                    <i class="fa-solid fa-link"></i>
+                    <span>W3Schools</span>
+                </a>
+            </div>
+            <div class="my-1">
+                <a href="https://www.udemy.com/" class="me-2" target="_blank">
+                    <i class="fa-solid fa-link"></i>
+                    <span>Udemy</span>
+                </a>
+            </div>
+            <div class="my-1">
+                <a href="https://www.freecodecamp.org/news" class="me-2" target="_blank">
+                    <i class="fa-solid fa-link"></i>
+                    <span>FreeCodeCamp</span>
+                </a>
+            </div>
+            <div class="my-1">
+                <a href="https://www.traversymedia.com/" class="me-2" target="_blank">
+                    <i class="fa-solid fa-link"></i>
+                    <span>Traversy Media</span>
+                </a>
+            </div>
+        </section>
+
+
+    </footer>
+
+    <button><a class="nav-link" href="#header" id="btn"><i class="fas fa-arrow-circle-up"></i></a></button>
+
+
+    <!-- ============================================================ -->
+
+    <!-- Popover JavaScript Code -->
+    <script>
+        var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle=" popover"]'))
+        var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+            return new
+                bootstrap.Popover(popoverTriggerEl)
+        });
+    </script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
